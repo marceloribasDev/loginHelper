@@ -14,7 +14,7 @@
     <script src="./js/index.js" defer></script>
 
     <!-- Importando as fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
@@ -27,15 +27,15 @@
         <h1>Login-Helper</h1>
     </header>
 
-    <main class="container">
+    <main>
         <form>
             <section class="container__input">
                 <input type="email" placeholder="example@gmail.com">
 
                 <div class="container__password">
                     <input type="password" id="password_field" class="password_field" placeholder="******">
-                    <i></i>
-                    <i></i>
+                    <i class="fas fa-eye" id="eye"></i>
+                    <i class="fas fa-eye-slash" id="eye-slash"></i>
                 </div>
 
             </section>
@@ -50,19 +50,16 @@
 
             </section>
 
+            <button id="btn__login">Login</button>
+
             <section class="container__login">
+                <span>Ou entre com:</span>
 
-                <button id="btn__login">Login</button>
-
-                <section class="links__login">
-                    <span>Ou entre com:</span>
-
-                    <aside>
-                        <a href="#"><i></i></a>
-                        <a href="#"><i></i></a>
-                        <a href="#"><i></i></a>
-                    </aside>
-                </section>
+                <aside>
+                    <a href="#"><i class="fab fa-google-plus-square google"></i></a>
+                    <a href="#"><i class="fab fa-linkedin linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook-square facebook"></i></a>
+                </aside>
 
             </section>
 
@@ -72,10 +69,6 @@
             </footer>
         </form>
     </main>
-
-    <footer>
-
-    </footer>
 
 </body>
 
